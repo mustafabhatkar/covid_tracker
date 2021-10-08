@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_snake_navigationbar/flutter_snake_navigationbar.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+import 'home/home_page.dart';
+
 class BasePage extends StatefulWidget {
   const BasePage({Key? key}) : super(key: key);
 
@@ -19,9 +21,7 @@ class _BasePageState extends State<BasePage> {
           physics: const NeverScrollableScrollPhysics(),
           controller: pageController,
           children: <Widget>[
-            Container(
-                child: const Center(child: Text("Page 1")),
-                color: Theme.of(context).backgroundColor),
+            HomePage(),
             Container(
                 child: const Center(child: Text("Page 2")),
                 color: Theme.of(context).backgroundColor),

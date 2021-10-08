@@ -22,6 +22,7 @@ class MyApp extends StatelessWidget {
             subtitle2: TextStyle(
                 fontSize: 14.0, color: Colors.white.withOpacity(0.7)))),
         primaryColor: const Color(0xff2c2424),
+        cardColor: const Color(0xff2c2424),
         backgroundColor: const Color(0xff171717),
          colorScheme: theme.colorScheme.copyWith(secondary: const Color(0xfff00916))
       ),
