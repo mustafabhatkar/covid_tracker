@@ -8,6 +8,6 @@ class MapWidget extends StatelessWidget {
     return Container(
       color: Colors.white70,
         height: MediaQuery.of(context).size.height * 0.35,
-        child: Center(child: Text("Map coming soon!")));
+        child: const Center(child: Text("Map coming soon!")));
   }
 }

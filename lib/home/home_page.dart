@@ -1,3 +1,4 @@
+import 'package:covid_tracker/home/country_list.dart';
 import 'package:covid_tracker/home/map_widget.dart';
 import 'package:covid_tracker/home/total_stats.dart';
 import 'package:flutter/material.dart';
@@ -18,14 +19,14 @@ class _HomePageState extends State<HomePage> {
       child: Scaffold(
         backgroundColor: Theme.of(context).backgroundColor,
         body:ListView(
-          children: [
+          children:const [
             MapWidget(),
-            TotalStats()
+            TotalStats(),
+            CountryList()
           ],
         )
       ),
     );
   }
 
-  totalStats()
 }
