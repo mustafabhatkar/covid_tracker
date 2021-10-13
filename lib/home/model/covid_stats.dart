@@ -20,7 +20,7 @@ class CovidStats {
     if (json['listOfStats'] != null) {
       listOfStats = [];
       json['listOfStats'].forEach((v) {
-        listOfStats.add(new ListOfStats.fromJson(v));
+        listOfStats.add( ListOfStats.fromJson(v));
       });
     }
   }

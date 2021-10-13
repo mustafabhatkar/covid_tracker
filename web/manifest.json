@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "name": "covid_tracker",
     "short_name": "covid_tracker",
@@ -33,3 +34,40 @@
         }
     ]
 }
+=======
+{
+    "name": "covid_tracker",
+    "short_name": "covid_tracker",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#0175C2",
+    "theme_color": "#0175C2",
+    "description": "A new Flutter project.",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}
+>>>>>>> db4efaa6be05ef04f874f66dd6d22eadcd569f33
