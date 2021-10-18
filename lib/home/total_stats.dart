@@ -5,30 +5,33 @@ import 'package:covid_tracker/utils/widgets/my_card.dart';
 
 import 'package:flutter/material.dart';
 
+import 'model/covid_stats.dart';
+
 class TotalStats extends StatelessWidget {
-  const TotalStats({Key? key}) : super(key: key);
+  final CovidStats? covidStats;
+  const TotalStats({Key? key,required this.covidStats}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MyCard(
       child: Column(children: [
-        Text("As of 06-10-2021 10:00",
+        Text("As of ${covidStats!.updateDate}",
             style: Theme.of(context).textTheme.subtitle2),
         SizedBox(height: 8.0),
         Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
           StatsContent(
               label: "Confirmed",
-              numbers: "20,000",
+              numbers: covidStats!.totalConfirmed.toString(),
               color: Colors.white.withOpacity(0.8),
               isHeader: true),
           StatsContent(
               label: "Deaths",
-              numbers: "5,000",
+              numbers: covidStats!.totalDeaths.toString(),
               color: Theme.of(context).colorScheme.secondary,
               isHeader: true),
           StatsContent(
               label: "Recovered",
-              numbers: "10,000",
+              numbers: covidStats!.totalRecovered.toString(),
               color: Color(0xff2bbb85),
               isHeader: true),
         ])

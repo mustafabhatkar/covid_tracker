@@ -19,6 +19,7 @@ dependencies:
   flutter_snake_navigationbar: 0.4.4-nullsafety.1
   font_awesome_flutter: ^9.1.0
   provider: ^6.0.1
+  google_maps_flutter: ^2.0.11
   
 
 

@@ -3,7 +3,7 @@ class CovidStats {
   late int totalConfirmed;
   late int totalRecovered;
   late String updateDate;
-  late List<ListOfStats> listOfStats;
+  late List<ListOfStats>? listOfStats;
 
   CovidStats(
       {required this.totalDeaths,
@@ -20,7 +20,7 @@ class CovidStats {
     if (json['listOfStats'] != null) {
       listOfStats = [];
       json['listOfStats'].forEach((v) {
-        listOfStats.add( ListOfStats.fromJson(v));
+      listOfStats!.add(ListOfStats.fromJson(v));
       });
     }
   }
@@ -56,5 +56,4 @@ class ListOfStats {
     lat = json['lat'];
     lon = json['lon'];
   }
-
 }
